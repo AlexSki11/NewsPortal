@@ -1,0 +1,19 @@
+{%extends "flatpages/default.html"%}
+{%load custom_filters%}
+
+
+{%block title%}
+{{post.header}}
+{%endblock title%}
+
+{%block header%}
+{{post.header|censor}}
+{%endblock header%}
+
+{%block title2%}
+Data created:{{post.data_create|date:'d.m.Y'}}
+{%endblock title2%}
+
+{%block content%}
+{{post.text|censor}}
+{%endblock content%}
