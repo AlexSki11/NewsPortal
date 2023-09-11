@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'flatpages/default.html' %}
+
+{%block title%}
+DELETE
+{%endblock title%}
+
+{%block title2%}
+Удаление
+{%endblock title2%}
+{%block content%}
+<form action="" method="post">
+    {% csrf_token %}
+    <hr>
+    <p>Удалить {{object.header}}?</p>
+    <input type="submit" value="Delete" />
+</form>
+{%endblock content%}

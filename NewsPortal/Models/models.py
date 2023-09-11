@@ -2,7 +2,7 @@ from django.contrib.auth.models import User
 from django.db import models
 from django.db.models import Sum
 from django.db.models.functions import Coalesce
-
+from django.urls import reverse
 
 # Create your models here.
 class Author(models.Model):
@@ -27,6 +27,9 @@ class Author(models.Model):
 class Category(models.Model):
     name = models.CharField(max_length=16, unique=True)
 
+    def __str__(self):
+        return f"{self.name}"
+
 class Post(models.Model):
     POST = "PO"
     ARTICLE = "AR"
@@ -44,6 +47,7 @@ class Post(models.Model):
     text = models.TextField(max_length=20000)
     rating = models.IntegerField(default=0)
 
+
     def like(self):
         self.rating += 1
         self.save()
@@ -60,10 +64,19 @@ class Post(models.Model):
     def __str__(self):
         return f"{self.header}"
 
+    def get_absolute_url(self):
+        if self.type_post == 'PO':
+            return reverse("post_detail", args=[str(self.id)])
+        else:
+            return reverse("article_detail", args=[str(self.id)])
+
 
 class PostCategory(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.post.header}:{self.category.name}"
 
 class Comment(models.Model):
     comment_post = models.ForeignKey(Post, on_delete=models.CASCADE)
