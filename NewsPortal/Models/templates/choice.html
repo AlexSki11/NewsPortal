@@ -1,0 +1,15 @@
+{%extends "flatpages/default.html"%}
+
+{%block title%}
+type
+{%endblock title%}
+
+
+{%block title2%}
+Выберите
+{% endblock title2 %}
+
+
+{%block content%}
+<a href="{%url 'posts_list'%}">Посты</a> <a href="{%url 'articles_list'%}">Новости</a>
+{%endblock content%}

@@ -11,7 +11,12 @@
 {%endblock header%}
 
 {%block title2%}
-Data created:{{post.data_create|date:'d.m.Y'}}
+<h4 align="left">Data created:{{post.data_create|date:'d.m.Y'}}</h4>
+<h5 align="right">{%if perms.Models.change_post%}
+    <a href="{{post.id}}/update">Редактировать</a>
+    <a href="{{post.id}}/delete">Удалить</a>
+    {%endif%}
+    </h5>
 {%endblock title2%}
 
 {%block content%}

@@ -1,0 +1,23 @@
+{% extends "flatpages/default.html" %}
+
+
+{%block title%}
+Страница не доступна
+{%endblock title%}
+
+{%block title2%}
+Страница не доступна
+{%endblock title2%}
+
+
+{%block content%}
+{%if not perms.Models.add_post%}
+Только авторы могут добавлять посты
+{%elif not perms.Models.change_post%}
+Только автор поста может изменить свой пост
+{%elif not perms.Models.delete_post%}
+Только автор поста может удалить свой пост
+{%else%}
+Нет прав
+{%endif%}
+{%endblock content%}

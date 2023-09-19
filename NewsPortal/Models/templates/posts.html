@@ -18,6 +18,12 @@ Posts
 
 {% endblock title2 %}
 
+{%block header%}
+{%if perms.Models.add_post%}
+    <p align="right"> <a href="create">Создать</a> </p>
+    {%endif%}
+{%endblock header%}
+
 
 {% block content %}
 <table>
@@ -29,9 +35,9 @@ Posts
 </tr>
 {%for post in posts%}
 <tr>
-<td>{{post.header|censor}} &nbsp;</td>
-<td>{{post.data_create|date:'d.m.Y'}}&nbsp;</td>
-<td>{{post.preview|censor}}&nbsp;</td>
+    <td><a href='{{post.id}}'>{{post.header|censor}}&nbsp;</a></td>
+    <td>{{post.data_create|date:'d.m.Y'}}&nbsp;</td>
+    <td>{{post.preview|censor}}&nbsp;</td>
 </tr>
 {%endfor%}
 </tbody>
