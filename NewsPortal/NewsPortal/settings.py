@@ -50,6 +50,9 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.yandex',
+
+    'django_apscheduler', #D6
+
 ]
 
 SITE_ID = 1
@@ -161,5 +164,24 @@ ACCOUNT_FORMS = {"signup": "accounts.forms.SignUpForm"}
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_CONFIRM_EMAIL_ON_GET = True
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_EMAIL_VERIFICATION= 'none'
+
+APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
+APSCHEDULER_RUN_NOW_TIMEOUT = 25
+
+if DEBUG:
+    ACCOUNT_EMAIL_VERIFICATION = 'optional'
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    EMAIL_HOST = 'smtp.yandex.ru'
+    EMAIL_PORT = 465
+    EMAIL_HOST_USER = "example@yandex.ru"
+    EMAIL_HOST_PASSWORD = "iliezvcovrxqizez"
+    EMAIL_USE_TLS = False
+    EMAIL_USE_SSL = True
+    DEFAULT_FROM_EMAIL = "example@yandex.ru"
+    EMAIL_SUBJECT_PREFIX = "TEST"
+
+else:
+    ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

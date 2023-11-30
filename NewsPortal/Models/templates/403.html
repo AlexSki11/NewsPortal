@@ -1,4 +1,4 @@
-{% extends "flatpages/default.html" %}
+u{% extends "flatpages/default.html" %}
 
 
 {%block title%}
@@ -11,7 +11,9 @@
 
 
 {%block content%}
-{%if not perms.Models.add_post%}
+{% if  not request.user.is_authenticated %}
+    Доступно только авторизированным пользователям
+{%elif not perms.Models.add_post%}
 Только авторы могут добавлять посты
 {%elif not perms.Models.change_post%}
 Только автор поста может изменить свой пост

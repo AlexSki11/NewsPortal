@@ -7,6 +7,12 @@
 {%endblock title%}
 
 {%block header%}
+
+    {% if post.is_news %}
+    <h3> Статья </h3>
+    {% else %}
+    <h3>Новость</h3>
+    {% endif %}
 {{post.header|censor}}
 {%endblock header%}
 

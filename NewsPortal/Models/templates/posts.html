@@ -7,8 +7,15 @@ Posts
 {% endblock title %}
 
 {% block title2 %}
-<h1>Новости/Статьи</h1>
-Поиск
+    {%with posts|first as post %}
+    {% if post.is_news %}
+    <h1>Статьи</h1>
+    {% else %}
+    <h1>Новости</h1>
+    {% endif %}
+    {% endwith %}
+
+    Поиск
 {%csrf_token%}
 <form action="" method="get">
     {{ filterset.form.as_p }}

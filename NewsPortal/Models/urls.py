@@ -2,7 +2,7 @@ from django.urls import path
 
 from .views import PostsList, PostDetail, PostCreate, PostUpdate, PostDelete
 from .views import ArticlesList, ArticleDetail, ArticleCreate, ArticleUpdate, ArticleDelete
-from .views import ChoicePost
+from .views import ChoicePost, subscriptions
 
 urlpatterns = [
     path("news/", PostsList.as_view(), name="posts_list"),
@@ -18,6 +18,6 @@ urlpatterns = [
     path("articles/<int:pk>/delete/", ArticleDelete.as_view(), name="article_delete"),
 
     path("", ChoicePost.as_view(), name="choice_post"),
-
+    path('subscriptions/', subscriptions, name='subscriptions'),
 
 ]

@@ -47,6 +47,14 @@ class Post(models.Model):
     text = models.TextField(max_length=20000)
     rating = models.IntegerField(default=0)
 
+    def get_author_str(self):
+
+        return self.author_id.author.get_full_name()
+
+    def is_news(self):
+        if self.type_post == "PO":
+            return True
+        else: return False
 
     def like(self):
         self.rating += 1
@@ -73,7 +81,7 @@ class Post(models.Model):
 
 class PostCategory(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, related_name='PostCategory', on_delete=models.CASCADE)
 
     def __str__(self):
         return f"{self.post.header}:{self.category.name}"
@@ -93,3 +101,6 @@ class Comment(models.Model):
         self.rating -= 1
         self.save()
 
+class Subscriptions(models.Model):
+    user = models.ForeignKey(to=User, related_name="subscriptions", on_delete=models.CASCADE)
+    category = models.ForeignKey(to=Category, related_name="subscriptions", on_delete=models.CASCADE)
