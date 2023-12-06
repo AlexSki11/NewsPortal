@@ -1,4 +1,4 @@
-from django.db.models.signals import post_save, m2m_changed
+from django.db.models.signals import m2m_changed
 from django.dispatch import receiver
 from django.core.mail import EmailMultiAlternatives
 
@@ -7,18 +7,17 @@ from .models import Post, User, Subscriptions, Category
 def post_created(sender, instance, action, **kwargs):
     if action == 'post_add':
         emails = []
-        categories = sender.category.get_queryset()
-        categories_names = []
+        categories = instance.post_category.all()
         for category in categories:
             emails.extend(User.objects.filter(subscriptions__category=category).values_list('email', flat=True))
-            categories_names.append(category.name)
+            send_email(instance, emails, category.name)
+            emails.clear()
 
-        send_email(instance, emails, categories_names)
     else:
          return
 
-def send_email(instance, emails, categories_names):
-    subject = f"Новый пост в категории {','.join(categories_names)}"
+def send_email(instance, emails, category_name):
+    subject = f"Новый пост в категории {category_name}"
 
     text_content = (
         f'Автор: {instance.get_author_str()}\n'
@@ -31,7 +30,8 @@ def send_email(instance, emails, categories_names):
         f'Автор: {instance.get_author_str()}<br>'
         f'Заголовок {instance.header}<br><br>'
         f'Превью:<br> {instance.preview()}<br>'
-        f'ссылка на пост <a href="http://127.0.0.1{instance.get_absolute_url()}">'
+        f'ссылка на пост <a href="http://127.0.0.1:8000{instance.get_absolute_url()}">'
+        f'клик</a>'
     )
     for email in emails:
         msg = EmailMultiAlternatives(subject, text_content, None, [email])

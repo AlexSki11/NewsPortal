@@ -50,13 +50,15 @@ def send_email(emails,posts,category_name):
             f'Автор: {post.get_author_str()}<br>'
             f'Заголовок {post.header}<br><br>'
             f'Превью:<br> {post.preview()}<br>'
-            f'ссылка на пост <a href="http://127.0.0.1{post.get_absolute_url()}<br><br>">'
+            f'ссылка на пост <a href="http://127.0.0.1:8000{post.get_absolute_url()}'
+            f'клик</a>'
+            f'<br><br>">'
         )
 
     for email in emails:
         msg = EmailMultiAlternatives(subject, text_content, None, [email])
         msg.attach_alternative(html_content, 'text/html')
-        print('ok')
+        #print('ok')
         msg.send()
 
 
@@ -88,7 +90,7 @@ class Command(BaseCommand):
 
         scheduler.add_job(
             my_job,
-            trigger=CronTrigger(day_of_week=4, hour=18),  # Every friday 18 hour seconds
+            trigger=CronTrigger(day_of_week=4, hour=18),  # Every friday 18 hour
             id="my_job",  # The `id` assigned to each job MUST be unique
             max_instances=1,
             replace_existing=True,

@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
-
+from dotenv import load_dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-^#0rd$@d*x0=9zt66*8(3(m8ausa#0u^*ckmq428jkij((k&2u
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+env = False
 
 ALLOWED_HOSTS = []
 
@@ -170,7 +171,8 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
 APSCHEDULER_RUN_NOW_TIMEOUT = 25
 
-if DEBUG:
+if DEBUG and not env:
+
     ACCOUNT_EMAIL_VERIFICATION = 'optional'
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     EMAIL_HOST = 'smtp.yandex.ru'
@@ -183,5 +185,15 @@ if DEBUG:
     EMAIL_SUBJECT_PREFIX = "TEST"
 
 else:
-    ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+    load_dotenv()
+    ACCOUNT_EMAIL_VERIFICATION = 'optional'
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+    EMAIL_HOST = 'smtp.yandex.ru'
+    EMAIL_PORT = 465
+    EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+    EMAIL_USE_TLS = False
+    EMAIL_USE_SSL = True
+    DEFAULT_FROM_EMAIL = os.getenv('EMAIL_HOST_USER')
+    EMAIL_SUBJECT_PREFIX = "TEST"
