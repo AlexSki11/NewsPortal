@@ -104,10 +104,12 @@ class ArticleCreate(PermissionRequiredMixin, CreateView):
     def form_valid(self, form):
         post = form.save(commit=False)
         post.type_post = 'AR'
-        if form.is_valid():
-            create_post.delay(form)
         post.author_id = Author.objects.get(author=self.request.user)
-        return super().form_valid(self, form)
+        post.save()
+        post.post_category.set(form.data['post_category'])
+        create_post.delay(post.id)
+
+        return HttpResponseRedirect(post.get_absolute_url())
 
 
 
