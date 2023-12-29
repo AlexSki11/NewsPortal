@@ -5,7 +5,8 @@ class ModelsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'Models'
 
-    def ready(self):
-        from . import signals
-        m2m_changed.connect(signals.post_created)
+   #Т.к. было дано задание сделать рассылку через celery, решил выключить сигнал
+   # def ready(self):
+    #    from . import signals
+     #   m2m_changed.connect(signals.post_created)
 

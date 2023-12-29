@@ -3,7 +3,7 @@ from django.dispatch import receiver
 from django.core.mail import EmailMultiAlternatives
 
 from .models import Post, User, Subscriptions, Category
-@receiver(m2m_changed, sender=Post.post_category.through)
+#@receiver(m2m_changed, sender=Post.post_category.through)
 def post_created(sender, instance, action, **kwargs):
     if action == 'post_add' and isinstance(instance, Post):
         emails = []
@@ -36,4 +36,5 @@ def send_email(instance, emails, category_name):
     for email in emails:
         msg = EmailMultiAlternatives(subject, text_content, None, [email])
         msg.attach_alternative(html_content, 'text/html')
-        #msg.send()
+        print('send')
+        msg.send()

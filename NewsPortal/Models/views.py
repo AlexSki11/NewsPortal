@@ -10,8 +10,9 @@ from django.contrib.auth.decorators import permission_required
 from django.views.decorators.csrf import csrf_protect
 from django.contrib.auth.decorators import login_required
 from django.db.models import Exists, OuterRef
-
-
+#celery_task
+from .tasks import create_post
+from django.http import HttpResponseRedirect
 # Create your views here.
 
 class PostsList(ListView):
@@ -54,9 +55,13 @@ class PostCreate(PermissionRequiredMixin ,CreateView):
     def form_valid(self, form):
         post = form.save(commit=False)
         post.type_post = 'PO'
-
         post.author_id = Author.objects.get(author=self.request.user)
-        return super().form_valid(form)
+        post.save()
+        post.post_category.set(form.data['post_category'])
+        create_post.delay(post.id)
+
+        return HttpResponseRedirect(post.get_absolute_url())
+
 
 class PostUpdate(PermissionRequiredMixin, UpdateView):
     form_class = PostForm
@@ -99,8 +104,12 @@ class ArticleCreate(PermissionRequiredMixin, CreateView):
     def form_valid(self, form):
         post = form.save(commit=False)
         post.type_post = 'AR'
+        if form.is_valid():
+            create_post.delay(form)
         post.author_id = Author.objects.get(author=self.request.user)
-        return super().form_valid(form)
+        return super().form_valid(self, form)
+
+
 
 class ArticlesList(ListView):
     model = Post
@@ -167,6 +176,9 @@ class ArticleDelete(PermissionRequiredMixin, DeleteView):
 class ChoicePost(TemplateView):
     template_name = "choice.html"
 
+    def get(self, request, *args, **kwargs):
+        return super().get(self, request, *args, **kwargs)
+
 @login_required
 @csrf_protect
 def subscriptions(request):
@@ -189,3 +201,5 @@ def subscriptions(request):
         'subscriptions.html',
         {'categories': category_with_subscriptions},
     )
+
+#celery

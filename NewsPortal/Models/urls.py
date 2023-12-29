@@ -3,9 +3,10 @@ from django.urls import path
 from .views import PostsList, PostDetail, PostCreate, PostUpdate, PostDelete
 from .views import ArticlesList, ArticleDetail, ArticleCreate, ArticleUpdate, ArticleDelete
 from .views import ChoicePost, subscriptions
-
+#from .views import IndexView #celery
 urlpatterns = [
-    path("news/", PostsList.as_view(), name="posts_list"),
+
+    path("news/", PostsList.as_view(), name="post_list"),
     path("news/<int:pk>", PostDetail.as_view(), name='post_detail'),
     path("news/create/", PostCreate.as_view(), name="post_create"),
     path("news/<int:pk>/update/", PostUpdate.as_view(), name="post_update"),
@@ -19,5 +20,7 @@ urlpatterns = [
 
     path("", ChoicePost.as_view(), name="choice_post"),
     path('subscriptions/', subscriptions, name='subscriptions'),
+
+
 
 ]
