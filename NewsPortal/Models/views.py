@@ -13,6 +13,7 @@ from django.db.models import Exists, OuterRef
 #celery_task
 from .tasks import create_post
 from django.http import HttpResponseRedirect
+from django.core.cache import cache
 # Create your views here.
 
 class PostsList(ListView):
@@ -43,6 +44,16 @@ class PostDetail(LoginRequiredMixin, DetailView):
     def get_queryset(self):
         self.queryset = Post.objects.filter(type_post="PO")
         return self.queryset
+
+    def get_object(self, *args, **kwargs):
+
+        obj = cache.get(f'post-{self.kwargs["pk"]}', None)
+
+        if not obj:
+            obj = super().get_object(queryset=self.queryset)
+            cache.set(f'post-{self.kwargs["pk"]}', obj)
+
+        return obj
 
 class PostCreate(PermissionRequiredMixin ,CreateView):
     form_class = PostForm
@@ -137,6 +148,17 @@ class ArticleDetail(LoginRequiredMixin, DetailView):
     context_object_name = "post"
 
     raise_exception = True
+
+    def get_object(self, *args, **kwargs):
+
+        obj = cache.get(f'post-{self.kwargs["pk"]}', None)
+
+        if not obj:
+            obj = super().get_object(queryset=self.queryset)
+            cache.set(f'post-{self.kwargs["pk"]}', obj)
+
+        return obj
+
 
     def get_queryset(self):
         self.queryset = Post.objects.filter(type_post="AR")

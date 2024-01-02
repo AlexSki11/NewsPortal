@@ -15,6 +15,7 @@ class PostForm(forms.ModelForm):
         ]
 
 
+
     def clean(self):
         cleaned_data = super().clean()
         header = cleaned_data.get("header")

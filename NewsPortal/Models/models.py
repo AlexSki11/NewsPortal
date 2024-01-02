@@ -3,6 +3,7 @@ from django.db import models
 from django.db.models import Sum
 from django.db.models.functions import Coalesce
 from django.urls import reverse
+from django.core.cache import cache
 
 # Create your models here.
 class Author(models.Model):
@@ -77,6 +78,13 @@ class Post(models.Model):
             return reverse("post_detail", args=[str(self.id)])
         else:
             return reverse("article_detail", args=[str(self.id)])
+
+    def save(
+        self, force_insert=False, force_update=False, using=None, update_fields=None
+    ):
+        super().save(self, force_insert, force_update, using, update_fields)
+        cache.delete(f'post-{self.pk}')
+
 
 
 class PostCategory(models.Model):

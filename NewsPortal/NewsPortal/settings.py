@@ -171,6 +171,17 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
 APSCHEDULER_RUN_NOW_TIMEOUT = 25
 
+#cash
+CACHES = {
+    'default': {
+        'BACKEND':
+            'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': os.path.join(BASE_DIR, 'cache_files'),
+
+
+    }
+}
+
 #celery
 CELERY_BROKER_URL = 'redis://localhost:6379'
 CELERY_RESULT_BACKEND = 'redis://localhost:6379'
