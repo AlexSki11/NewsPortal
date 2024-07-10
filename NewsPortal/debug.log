@@ -1,0 +1,30 @@
+Watching for file changes with StatReloader
+B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\middleware\my_middleware.py", line 9, in __call__
+    print(request.mobile, "yes")
+          ^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'mobile'
+ERROR "GET / HTTP/1.1" 500 65248
+ERROR Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\middleware\my_middleware.py", line 9, in __call__
+    print(request.mobile, "yes")
+          ^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'mobile'
+ERROR "GET /favicon.ico HTTP/1.1" 500 65151
+INFO B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\middleware\my_middleware.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2385
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2436
+INFO Watching for file changes with StatReloader

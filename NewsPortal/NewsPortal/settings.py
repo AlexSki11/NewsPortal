@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
 from pathlib import Path
 import os
 from dotenv import load_dotenv
@@ -26,6 +25,7 @@ SECRET_KEY = 'django-insecure-^#0rd$@d*x0=9zt66*8(3(m8ausa#0u^*ckmq428jkij((k&2u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 env = False
+my_logging = True
 
 ALLOWED_HOSTS = []
 
@@ -68,6 +68,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
     'allauth.account.middleware.AccountMiddleware',
+    'NewsPortal.middleware.my_middleware.Check_model',
 ]
 
 ROOT_URLCONF = 'NewsPortal.urls'
@@ -201,6 +202,8 @@ if DEBUG and not env:
     EMAIL_USE_SSL = True
     DEFAULT_FROM_EMAIL = "example@yandex.ru"
     EMAIL_SUBJECT_PREFIX = "TEST"
+    
+    ADMINS = [('Alex', 'test@test.ru'), ]
 
 else:
     load_dotenv()
@@ -215,3 +218,32 @@ else:
     EMAIL_USE_SSL = True
     DEFAULT_FROM_EMAIL = os.getenv('EMAIL_HOST_USER')
     EMAIL_SUBJECT_PREFIX = "TEST"
+
+if my_logging:
+    LOGGING = {
+        'version': 1,
+        'disable_existing_logger': False,
+        'loggers': {
+            'django' : {
+                'handlers':['Models'],
+                'level' : 'DEBUG',
+            }
+        },
+        'handlers' : {
+            'Models': {
+                'level' : 'INFO',
+                'class':'logging.FileHandler',
+                'filename' : 'debug.log',  
+                'formatter':'myformatter',
+            },
+        
+        },
+        'formatters':{
+            'myformatter':{
+                'format':'{levelname} {message}',
+                'style':'{'
+            },
+            
+        },
+    }
+
