@@ -14,7 +14,11 @@ from django.db.models import Exists, OuterRef
 from .tasks import create_post
 from django.http import HttpResponseRedirect
 from django.core.cache import cache
+import logging
+from django.http import HttpResponseServerError
 # Create your views here.
+logger = logging.getLogger(__name__)
+
 
 class PostsList(ListView):
     model = Post
@@ -23,8 +27,10 @@ class PostsList(ListView):
     template_name = "posts.html"
     context_object_name = "posts"
     paginate_by = 10
-
-    def get_queryset(self):
+    
+    def get_queryset(self):  
+        logger.error("error")
+        logger.critical('crit')
         queryset = super().get_queryset()
         self.filterset = PostFilter(self.request.GET, queryset)
         return self.filterset.qs
@@ -225,5 +231,10 @@ def subscriptions(request):
         'subscriptions.html',
         {'categories': category_with_subscriptions},
     )
+
+#Фун-я для проверки логов
+def test(request):
+
+    return HttpResponseServerError()
 
 #celery

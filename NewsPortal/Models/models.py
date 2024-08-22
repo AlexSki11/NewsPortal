@@ -79,10 +79,8 @@ class Post(models.Model):
         else:
             return reverse("article_detail", args=[str(self.id)])
 
-    def save(
-        self, force_insert=False, force_update=False, using=None, update_fields=None
-    ):
-        super().save(self, force_insert, force_update, using, update_fields)
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
         cache.delete(f'post-{self.pk}')
 
 

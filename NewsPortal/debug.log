@@ -28,3 +28,11 @@ WARNING "GET / HTTP/1.1" 404 2385
 WARNING Not Found: /favicon.ico
 WARNING "GET /favicon.ico HTTP/1.1" 404 2436
 INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader

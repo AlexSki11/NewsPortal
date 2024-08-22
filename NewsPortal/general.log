@@ -1,0 +1,894 @@
+2024-08-15 22:49:25,310 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 22:50:46,775 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 22:51:01,196 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-15 22:51:01,970 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 22:52:15,847 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 22:56:22,228 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-15 22:57:03,475 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:00:13,856 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py changed, reloading.
+2024-08-15 23:00:14,634 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:00:40,835 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py changed, reloading.
+2024-08-15 23:00:41,497 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:04:29,003 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py changed, reloading.
+2024-08-15 23:04:29,742 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:06:31,508 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py changed, reloading.
+2024-08-15 23:06:32,377 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:07:03,216 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py changed, reloading.
+2024-08-15 23:07:04,026 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:15:48,993 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py changed, reloading.
+2024-08-15 23:15:49,809 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:16:42,007 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\urls.py changed, reloading.
+2024-08-15 23:16:42,841 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:17:21,579 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-15 23:17:22,372 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:17:24,163 ERROR log Internal Server Error: /models/test/
+2024-08-15 23:18:02,351 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-15 23:18:03,064 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:18:06,228 ERROR log Internal Server Error: /models/test/
+2024-08-15 23:18:44,034 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-15 23:18:44,766 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:18:50,050 ERROR log Internal Server Error: /models/test/
+2024-08-15 23:19:51,116 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-15 23:19:51,901 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:19:55,081 ERROR log Internal Server Error: /models/test/
+2024-08-15 23:22:29,652 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py changed, reloading.
+2024-08-15 23:22:30,364 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:22:35,131 ERROR log Internal Server Error: /models/test/
+2024-08-15 23:32:04,330 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py changed, reloading.
+2024-08-15 23:32:05,101 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:32:09,647 ERROR log Internal Server Error: /models/test/
+2024-08-15 23:32:26,161 ERROR log Internal Server Error: /models/test/
+2024-08-15 23:32:47,040 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py changed, reloading.
+2024-08-15 23:32:47,811 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:32:49,441 ERROR log Internal Server Error: /models/test/
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py", line 239, in test
+    name = 1/0
+           ~^~
+ZeroDivisionError: division by zero
+2024-08-15 23:36:06,517 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py changed, reloading.
+2024-08-15 23:36:07,302 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:36:21,581 ERROR log Internal Server Error: /models/test/
+2024-08-15 23:37:36,892 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py changed, reloading.
+2024-08-15 23:37:37,603 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:37:42,477 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-15 23:37:43,152 INFO autoreload Watching for file changes with StatReloader
+2024-08-15 23:37:56,345 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-15 23:37:57,028 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 00:17:00,529 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 00:17:14,117 ERROR log Internal Server Error: /models/test/
+2024-08-17 21:04:16,506 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 21:08:07,553 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 21:08:08,315 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 21:10:19,708 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 21:10:20,485 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 21:10:44,377 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 21:10:45,158 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 21:11:14,185 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 21:11:14,970 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 21:13:52,717 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 21:13:58,669 ERROR log Internal Server Error: /models/test/
+2024-08-17 21:21:57,974 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 21:22:04,509 ERROR log Internal Server Error: /models/test/
+2024-08-17 21:26:44,010 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 21:26:44,761 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 21:26:54,626 ERROR log Internal Server Error: /models/test/
+2024-08-17 21:27:30,970 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 21:27:31,771 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 21:28:26,154 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 21:28:26,866 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 21:28:32,000 ERROR log Internal Server Error: /models/test/
+2024-08-17 21:33:57,802 ERROR log Internal Server Error: /models/news/create/
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py", line 76, in form_valid
+    post.save()
+  File "B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\models.py", line 85, in save
+    super().save(self, force_insert, force_update, using, update_fields)
+TypeError: Model.save() takes from 1 to 5 positional arguments but 6 were given
+2024-08-17 21:38:27,033 ERROR log Internal Server Error: /models/news/create/
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py", line 76, in form_valid
+    post.save()
+  File "B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\models.py", line 85, in save
+    super().save(self, force_insert, force_update, using, update_fields)
+TypeError: Model.save() takes from 1 to 5 positional arguments but 6 were given
+2024-08-17 21:40:44,379 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\models.py changed, reloading.
+2024-08-17 21:40:45,123 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 21:42:12,930 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 21:42:34,296 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\models.py changed, reloading.
+2024-08-17 21:42:35,046 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 21:42:37,650 ERROR log Internal Server Error: /models/news/create/
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py", line 76, in form_valid
+    post.save()
+  File "B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\models.py", line 85, in save
+    super().save(self, force_insert, force_update, using, update_fields)
+TypeError: Model.save() takes from 1 to 5 positional arguments but 6 were given
+2024-08-17 21:52:41,649 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 21:54:39,432 ERROR log Internal Server Error: /models/news/create/
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 264, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 265, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 627, in _connect
+    raise err
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 615, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 127, in reconnect_on_error
+    yield
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 177, in _consume_from
+    self._pubsub.subscribe(key)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\client.py", line 916, in subscribe
+    ret_val = self.execute_command("SUBSCRIBE", *new_channels.keys())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\client.py", line 749, in execute_command
+    self.connection = self.connection_pool.get_connection(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 264, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 265, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 627, in _connect
+    raise err
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 615, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\base.py", line 798, in send_task
+    self.backend.on_task_call(P, task_id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 373, in on_task_call
+    self.result_consumer.consume_from(task_id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 169, in consume_from
+    return self.start(task_id)
+           ^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 147, in start
+    self._consume_from(initial_task_id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 176, in _consume_from
+    with self.reconnect_on_error():
+  File "B:\Program Files\python\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 130, in reconnect_on_error
+    self._ensure(self._reconnect_pubsub, ())
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 384, in ensure
+    return retry_over_time(
+           ^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 106, in _reconnect_pubsub
+    metas = self.backend.client.mget(self.subscribed_to)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\commands\core.py", line 2015, in mget
+    return self.execute_command("MGET", *args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py", line 78, in form_valid
+    create_post.delay(post.id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\task.py", line 594, in apply_async
+    return app.send_task(
+           ^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\base.py", line 796, in send_task
+    with P.connection._reraise_as_library_errors():
+  File "B:\Program Files\python\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+2024-08-17 21:59:18,666 ERROR log Internal Server Error: /models/news/create/
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 264, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 265, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 627, in _connect
+    raise err
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 615, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 127, in reconnect_on_error
+    yield
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 177, in _consume_from
+    self._pubsub.subscribe(key)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\client.py", line 916, in subscribe
+    ret_val = self.execute_command("SUBSCRIBE", *new_channels.keys())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\client.py", line 749, in execute_command
+    self.connection = self.connection_pool.get_connection(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 264, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 265, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 627, in _connect
+    raise err
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 615, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\base.py", line 798, in send_task
+    self.backend.on_task_call(P, task_id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 373, in on_task_call
+    self.result_consumer.consume_from(task_id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 169, in consume_from
+    return self.start(task_id)
+           ^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 147, in start
+    self._consume_from(initial_task_id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 176, in _consume_from
+    with self.reconnect_on_error():
+  File "B:\Program Files\python\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 130, in reconnect_on_error
+    self._ensure(self._reconnect_pubsub, ())
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 384, in ensure
+    return retry_over_time(
+           ^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 106, in _reconnect_pubsub
+    metas = self.backend.client.mget(self.subscribed_to)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\commands\core.py", line 2015, in mget
+    return self.execute_command("MGET", *args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py", line 78, in form_valid
+    create_post.delay(post.id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\task.py", line 594, in apply_async
+    return app.send_task(
+           ^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\base.py", line 796, in send_task
+    with P.connection._reraise_as_library_errors():
+  File "B:\Program Files\python\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+2024-08-17 22:00:16,198 ERROR log Internal Server Error: /models/news/create/
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 264, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 265, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 627, in _connect
+    raise err
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 615, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 127, in reconnect_on_error
+    yield
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 177, in _consume_from
+    self._pubsub.subscribe(key)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\client.py", line 916, in subscribe
+    ret_val = self.execute_command("SUBSCRIBE", *new_channels.keys())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\client.py", line 749, in execute_command
+    self.connection = self.connection_pool.get_connection(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 264, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 265, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 627, in _connect
+    raise err
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 615, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\base.py", line 798, in send_task
+    self.backend.on_task_call(P, task_id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 373, in on_task_call
+    self.result_consumer.consume_from(task_id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 169, in consume_from
+    return self.start(task_id)
+           ^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 147, in start
+    self._consume_from(initial_task_id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 176, in _consume_from
+    with self.reconnect_on_error():
+  File "B:\Program Files\python\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 130, in reconnect_on_error
+    self._ensure(self._reconnect_pubsub, ())
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 384, in ensure
+    return retry_over_time(
+           ^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 106, in _reconnect_pubsub
+    metas = self.backend.client.mget(self.subscribed_to)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\commands\core.py", line 2015, in mget
+    return self.execute_command("MGET", *args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py", line 78, in form_valid
+    create_post.delay(post.id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\task.py", line 594, in apply_async
+    return app.send_task(
+           ^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\base.py", line 796, in send_task
+    with P.connection._reraise_as_library_errors():
+  File "B:\Program Files\python\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+2024-08-17 22:00:30,843 ERROR log Internal Server Error: /models/news/create/
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 264, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 265, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 627, in _connect
+    raise err
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 615, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 127, in reconnect_on_error
+    yield
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 177, in _consume_from
+    self._pubsub.subscribe(key)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\client.py", line 916, in subscribe
+    ret_val = self.execute_command("SUBSCRIBE", *new_channels.keys())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\client.py", line 749, in execute_command
+    self.connection = self.connection_pool.get_connection(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 264, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 265, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 627, in _connect
+    raise err
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 615, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\base.py", line 798, in send_task
+    self.backend.on_task_call(P, task_id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 373, in on_task_call
+    self.result_consumer.consume_from(task_id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 169, in consume_from
+    return self.start(task_id)
+           ^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 147, in start
+    self._consume_from(initial_task_id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 176, in _consume_from
+    with self.reconnect_on_error():
+  File "B:\Program Files\python\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 130, in reconnect_on_error
+    self._ensure(self._reconnect_pubsub, ())
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 384, in ensure
+    return retry_over_time(
+           ^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\backends\redis.py", line 106, in _reconnect_pubsub
+    metas = self.backend.client.mget(self.subscribed_to)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\commands\core.py", line 2015, in mget
+    return self.execute_command("MGET", *args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\views.py", line 78, in form_valid
+    create_post.delay(post.id)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\task.py", line 594, in apply_async
+    return app.send_task(
+           ^^^^^^^^^^^^^^
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\celery\app\base.py", line 796, in send_task
+    with P.connection._reraise_as_library_errors():
+  File "B:\Program Files\python\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+2024-08-17 22:24:10,430 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 22:24:11,270 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 22:25:06,784 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 22:25:07,546 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 22:25:24,120 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 22:25:24,925 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 22:25:52,912 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 22:25:53,707 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 22:27:20,688 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 22:27:21,421 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 22:27:23,059 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 22:27:23,891 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 22:30:40,412 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 22:30:41,199 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 22:30:48,185 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\celery.py changed, reloading.
+2024-08-17 22:30:49,023 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:00:46,525 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:04:05,986 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 23:04:06,782 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:04:46,309 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 23:04:47,203 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:26:06,032 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:29:03,448 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 23:29:04,176 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:29:52,236 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 23:29:52,998 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:33:48,696 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 23:33:49,479 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:33:55,379 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 23:33:56,145 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:35:58,095 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 23:35:58,949 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:37:10,482 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 23:37:11,220 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:37:16,098 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 23:37:16,870 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:55:13,833 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 23:55:14,643 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:55:23,701 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 23:55:24,600 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:57:21,165 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 23:57:21,905 INFO autoreload Watching for file changes with StatReloader
+2024-08-17 23:57:57,336 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-17 23:57:58,103 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:00:40,907 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:14:17,756 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\signals.py changed, reloading.
+2024-08-18 00:14:18,532 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:14:42,540 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\signals.py changed, reloading.
+2024-08-18 00:14:43,319 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:16:07,908 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\signals.py changed, reloading.
+2024-08-18 00:16:08,682 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:20:32,981 ERROR log Internal Server Error: /models/test/
+2024-08-18 00:21:17,680 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\Models\signals.py changed, reloading.
+2024-08-18 00:21:18,480 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:24:10,131 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 00:24:10,979 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:26:00,695 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:30:06,116 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:31:12,597 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:31:50,799 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:35:30,358 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:36:10,046 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 00:36:10,798 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:41:20,654 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:47:26,718 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 00:47:27,584 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:48:44,459 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\__init__.py changed, reloading.
+2024-08-18 00:48:45,236 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:49:04,909 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\__init__.py changed, reloading.
+2024-08-18 00:49:05,656 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:52:24,666 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 00:52:25,438 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:55:37,166 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\__init__.py changed, reloading.
+2024-08-18 00:55:37,903 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:56:45,301 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 00:56:46,088 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:56:49,868 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 00:56:50,685 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:56:53,121 ERROR log Internal Server Error: /models/test/
+2024-08-18 00:57:48,726 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 00:57:49,472 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:57:52,941 ERROR log Internal Server Error: /models/test/
+2024-08-18 00:58:44,143 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 00:58:44,858 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 00:58:47,653 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:00:05,003 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:00:05,805 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:00:11,465 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:04:15,129 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:04:16,000 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:04:18,562 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:05:20,107 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:05:20,828 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:05:30,916 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:05:53,318 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:05:54,155 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:10:12,533 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\message.py changed, reloading.
+2024-08-18 01:10:13,243 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:10:16,151 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:10:23,582 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\__init__.py changed, reloading.
+2024-08-18 01:10:24,328 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:11:16,709 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\message.py changed, reloading.
+2024-08-18 01:11:17,452 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:11:20,411 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:11:38,494 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\message.py changed, reloading.
+2024-08-18 01:11:39,248 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:12:36,787 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\message.py changed, reloading.
+2024-08-18 01:12:37,522 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:12:39,265 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:13:26,795 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\message.py changed, reloading.
+2024-08-18 01:13:27,649 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:13:29,956 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:13:55,915 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:13:58,663 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\message.py changed, reloading.
+2024-08-18 01:13:59,473 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:14:03,256 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\__init__.py changed, reloading.
+2024-08-18 01:14:04,085 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:14:08,306 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:15:19,494 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:15:22,472 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:16:48,797 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\message.py changed, reloading.
+2024-08-18 01:16:49,605 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:16:53,124 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:17:07,431 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\__init__.py changed, reloading.
+2024-08-18 01:17:08,275 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:18:06,810 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:18:07,582 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:18:13,795 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:18:54,833 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:18:55,749 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:19:52,662 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:19:53,401 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:21:14,106 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:21:14,896 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:21:18,628 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:24:50,933 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\__init__.py changed, reloading.
+2024-08-18 01:24:51,714 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:24:55,046 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:26:37,878 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\__init__.py changed, reloading.
+2024-08-18 01:26:38,619 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:26:42,068 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:29:40,496 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:29:41,298 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:33:01,857 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:33:02,598 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:33:12,144 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:33:35,080 INFO autoreload B:\disk\learn\project\NewsPortal\venv\Lib\site-packages\django\core\mail\__init__.py changed, reloading.
+2024-08-18 01:33:35,794 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:34:10,749 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:34:43,326 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:34:44,064 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:34:47,823 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:47:42,783 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:47:43,492 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:47:56,783 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:56:56,150 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:56:56,946 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:57:00,001 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:57:28,325 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:57:52,382 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 01:57:58,598 ERROR log Internal Server Error: /models/test/
+2024-08-18 01:58:33,436 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 01:58:34,261 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 02:06:45,475 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 02:06:46,218 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 02:07:00,134 ERROR log Internal Server Error: /models/test/
+2024-08-18 02:09:12,974 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 02:09:13,744 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 02:10:20,633 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 02:10:32,949 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 02:10:48,362 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 02:11:02,900 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 02:11:15,006 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 02:11:15,808 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 02:11:18,509 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-18 02:11:26,271 INFO autoreload Watching for file changes with StatReloader
+2024-08-18 02:13:56,795 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-22 22:05:35,245 INFO autoreload Watching for file changes with StatReloader
+2024-08-22 22:11:11,622 ERROR log Internal Server Error: /models/test/
+2024-08-22 22:42:44,813 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.
+2024-08-22 22:42:45,630 INFO autoreload Watching for file changes with StatReloader
+2024-08-22 22:46:52,048 INFO autoreload B:\disk\learn\project\NewsPortal\NewsPortal\NewsPortal\NewsPortal\settings.py changed, reloading.

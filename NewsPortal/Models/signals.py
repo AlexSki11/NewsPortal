@@ -27,7 +27,7 @@ def send_email(instance, emails, category_name):
     )
 
     html_content = (
-        f'Автор: {instance.get_author_str()}<br>'
+        f'Автор: {instance.get_author_str()}<br>'   
         f'Заголовок {instance.header}<br><br>'
         f'Превью:<br> {instance.preview()}<br>'
         f'ссылка на пост <a href="http://127.0.0.1:8000{instance.get_absolute_url()}">'

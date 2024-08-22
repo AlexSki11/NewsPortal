@@ -24,10 +24,10 @@ SECRET_KEY = 'django-insecure-^#0rd$@d*x0=9zt66*8(3(m8ausa#0u^*ckmq428jkij((k&2u
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-env = False
+env = True
 my_logging = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -184,8 +184,8 @@ CACHES = {
 }
 
 #celery
-CELERY_BROKER_URL = 'redis://localhost:6379'
-CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
@@ -203,7 +203,7 @@ if DEBUG and not env:
     DEFAULT_FROM_EMAIL = "example@yandex.ru"
     EMAIL_SUBJECT_PREFIX = "TEST"
     
-    ADMINS = [('Alex', 'test@test.ru'), ]
+    ADMINS = os.getenv('ADMINS')
 
 else:
     load_dotenv()
@@ -217,33 +217,152 @@ else:
     EMAIL_USE_TLS = False
     EMAIL_USE_SSL = True
     DEFAULT_FROM_EMAIL = os.getenv('EMAIL_HOST_USER')
-    EMAIL_SUBJECT_PREFIX = "TEST"
+    SERVER_EMAIL = os.getenv('EMAIL_HOST_USER')#3-4 часа думал почему не отправляет письма, а это из-за того что не было этой переменной
+    EMAIL_SUBJECT_PREFIX = '[TEST]',
+    ADMINS =  os.getenv('ADMINS')#Если пробовать достать из окружения то django вызывает ошибку, когда написал напрямую все заработало, час на это убил, оставлю так чтобы особо не раскрывать данные
 
 if my_logging:
     LOGGING = {
         'version': 1,
         'disable_existing_logger': False,
-        'loggers': {
-            'django' : {
-                'handlers':['Models'],
-                'level' : 'DEBUG',
-            }
-        },
-        'handlers' : {
-            'Models': {
-                'level' : 'INFO',
-                'class':'logging.FileHandler',
-                'filename' : 'debug.log',  
-                'formatter':'myformatter',
-            },
         
-        },
         'formatters':{
-            'myformatter':{
-                'format':'{levelname} {message}',
+            #console(1) 
+            'console_formatter_debug':{
+                'format':'{asctime} {levelname} {message}',
+                'style':'{',
+                },
+            'console_formatter_warning':{
+                'format':'{asctime} {levelname} {message} {pathname}',
+                'style':'{',
+            },
+            'console_formatter_error_critical':{
+                'format':'{asctime} {levelname} {message} {pathname} {exc_info}',
+                'style':'{',
+            },
+
+            #info genetal.log(2)
+            'file_formatter_info':{
+                'format':'{asctime} {levelname} {module} {message}',
+                'style':'{',
+            },
+
+            #error critical error.log(3)
+            'file_formatter_error_log':{
+                'format':'{asctime} {levelname} {message} {exc_info}',
                 'style':'{'
             },
-            
+
+            #security_log(4)
+
+            'security_formatter':{
+                'format':'{asctime} {levelname} {module} {message}',
+                'style':'{'
+            },
+
+            #mail_formatter(5)
+            'mail_formatter':{
+                'format':'{asctime} {levelname} {message}',
+                'style':'{'
+            }
+
         },
+        'filters':{
+            'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+            },
+            'require_debug_false':{
+                '()':'django.utils.log.RequireDebugFalse',
+            }
+
+        },
+        'handlers' : {
+        #console(1)
+            'console_debug':{
+                'level':'DEBUG',
+                'class':'logging.StreamHandler',
+                'formatter':'console_formatter_debug',
+                'filters':['require_debug_true']
+            },
+            'console_warning':{
+                'level':'WARNING',
+                'class':'logging.StreamHandler',
+                'formatter':'console_formatter_warning',
+                'filters':['require_debug_true']
+            },
+            'console_error':{
+                'level':'ERROR',
+                'class':'logging.StreamHandler',
+                'formatter':'console_formatter_error_critical',
+                'filters':['require_debug_true']
+            },
+            'console_critical':{
+                'level':'CRITICAL',
+                'class':'logging.StreamHandler',
+                'formatter':'console_formatter_error_critical',
+                'filters':['require_debug_true']
+            },
+
+        #file general.log(2)
+            'file_info':{
+                'level':'INFO',
+                'class':'logging.FileHandler',
+                'filename':'general.log',
+                'formatter':'file_formatter_info',
+                'filters':['require_debug_false']
+            },
+        
+        #file error.log(3)
+            'file_error':{
+                'level':'ERROR',
+                'class':'logging.FileHandler',
+                'filename':'error.log',
+                'formatter':'file_formatter_error_log',
+            },
+
+        #security.log(4)
+            'security_log':{
+                'level':'DEBUG',
+                'class':'logging.FileHandler',
+                'filename':'security.log',
+                'formatter':'security_formatter'
+            },
+
+        #mail_send(5)
+            'mail_send':{
+                'level':'ERROR',
+                'class':'django.utils.log.AdminEmailHandler',
+                'formatter':'mail_formatter',
+                'filters':['require_debug_false']
+            },
+
+
+        },
+        'loggers': {
+            'django' : {
+                'handlers':['console_debug','console_warning','console_error','console_critical', 'file_info'],
+                'level' : 'INFO',
+            },
+            'django.request':{
+                'handlers':['file_error', 'mail_send',],
+                'level':'ERROR'
+            },
+            'django.server':{
+                'handlers':['mail_send','file_error', ],
+                'level':'ERROR'
+            },
+            'django.template':{
+                'handlers':['file_error',],
+                'level':'ERROR'
+            },
+            'django.db.backends':{
+                'handlers':['file_error',],
+                'level':'ERROR'
+            },
+            'django.security':{
+                'handlers':['security_log',],
+                'level':'DEBUG' #В задании не было указано какой должен быть уровень данных(Лично я бы поставил INFO)
+            },
+        },        
     }
 

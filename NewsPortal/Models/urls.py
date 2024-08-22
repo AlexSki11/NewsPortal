@@ -2,7 +2,7 @@ from django.urls import path
 
 from .views import PostsList, PostDetail, PostCreate, PostUpdate, PostDelete
 from .views import ArticlesList, ArticleDetail, ArticleCreate, ArticleUpdate, ArticleDelete
-from .views import ChoicePost, subscriptions
+from .views import ChoicePost, subscriptions, test
 from django.views.decorators.cache import cache_page
 
 urlpatterns = [
@@ -21,6 +21,7 @@ urlpatterns = [
 
     path("", cache_page(60*10)(ChoicePost.as_view()), name="choice_post"),
     path('subscriptions/', subscriptions, name='subscriptions'),
+    path("test/", test, name='test')
 
 
 
