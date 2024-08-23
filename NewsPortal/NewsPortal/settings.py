@@ -341,7 +341,7 @@ if my_logging:
         'loggers': {
             'django' : {
                 'handlers':['console_debug','console_warning','console_error','console_critical', 'file_info'],
-                'level' : 'INFO',
+                'level' : 'DEBUG',
             },
             'django.request':{
                 'handlers':['file_error', 'mail_send',],
